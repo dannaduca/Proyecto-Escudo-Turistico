@@ -6,6 +6,6 @@ simplejson
 joblib
 numpy
 pandas
-scikit-learn
+scikit-learn==1.2.2
 geopandas
 matplotlib
