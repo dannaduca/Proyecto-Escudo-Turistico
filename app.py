@@ -29,7 +29,7 @@ lottie_coding = load_lottieurl('https://lottie.host/5d31c170-a371-43bf-8bc8-f177
 lottie_coding_2 = load_lottieurl("https://lottie.host/97516d4f-70e1-4191-8d2b-e8553fe6f4af/gMaiFE4D9i.json")
 lottie_coding_3 = load_lottieurl('https://lottie.host/3c5475a5-8a8a-42f1-8cd5-74cb4198395c/p2c0DjiSL6.json')
 lottie_coding_4 = load_lottieurl('https://lottie.host/6c062e98-f431-4adb-a677-38e536a7f10a/t21eGU3B1G.json')
-imagen = Image.open('/content/sample_data/CLASIFICACION.png')
+imagen = Image.open('CLASIFICACION.png')
 
 with st.container():
     left_column, right_column = st.columns(2)
@@ -175,7 +175,7 @@ if st.button("Clasificación:"):
 
   try:
 
-    model = joblib.load('/content/modelo_knn.joblib')
+    model = joblib.load('modelo_knn.joblib')
 
     input_data = np.array([[departamento, año_seleccionado, mes_seleccionado, otros_delitos, secuestro,
                             terrorismo, del_sexual, homicidio, les_personal, estaciones_policia,
@@ -203,7 +203,7 @@ if st.button("Clasificación:"):
     st.subheader("¿Qué nivel de inseguridad tiene este departamento?")
     st.write(etiqueta_riesgo_predicha)
 
-    geojson_file = '/content/sample_data/colombia.geo.json'
+    geojson_file = 'colombia.geo.json'
     colombia = gpd.read_file(geojson_file)
 
     color_dict = {
