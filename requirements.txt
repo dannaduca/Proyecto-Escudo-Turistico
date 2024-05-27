@@ -1,0 +1,11 @@
+streamlit
+requests
+streamlit_lottie
+pillow
+simplejson
+joblib
+numpy
+pandas
+scikit-learn
+geopandas
+matplotlib
